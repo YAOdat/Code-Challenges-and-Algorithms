@@ -1,0 +1,12 @@
+{
+  "name": "challenge01",
+  "version": "1.0.0",
+  "description": "## Challenge01 - Construct BT from Preorder & Inorder:",
+  "main": "challenge01.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

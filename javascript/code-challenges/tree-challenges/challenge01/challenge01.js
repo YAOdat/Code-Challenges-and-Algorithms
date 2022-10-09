@@ -35,7 +35,7 @@ class BinaryTree {
             if (node.right) traverse(node.right)
         }
         traverse(this.root)
-        return result;
+        return order;
     }
 
 
