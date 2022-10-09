@@ -18,6 +18,26 @@ There are hireachical relations between the values that you have in your idea be
 
 ### Algorithm:
 
+1. Create a Binary Tree class that has the methods, preOrder, inOrder, and postOrder.
+
+2. Pre-order order should be:
+ Root >> Left >> Right.
+
+3. In-order order should be:
+Left >> Root >> Right.
+
+4. Post-Order order should be:
+Left >> Right >> Root.
+
+5. Using left, right, and root variables we can set the order of each method.
+
+
+### 
+
+Visualization
+
+[Tree](treeVisualization.png)
+
 
 
 ### Edge Case:
