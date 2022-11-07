@@ -1,0 +1,15 @@
+{
+  "name": "challenge01",
+  "version": "1.0.0",
+  "description": "## Challenge01 - Two Sum BST:",
+  "main": "challenge01.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.2.2"
+  }
+}
