@@ -1,20 +1,25 @@
-// test using jest
-// testing if the function checkTree works correctly
-// test if the function returns true if the tree is balanced
-// test if the function returns false if the tree is not balanced
+'use strict';
 
-const treeChecker = require('./challenge01.js');
+const {Tree, treeChecker } = require('./challenge01.js');
 
 describe('treeChecker', () => {
-    it('should return true if the tree has two elements that their summation is the given integer', () => {
-        let tree1 = [7,2,9,1,5,null,14];
-        let integer = 3;
-        expect(treeChecker(tree1, integer)).toEqual(true);
+    it('returns true if there are two values in the tree that add up to the integer', () => {
+        let tree1 = new Tree();
+        tree1.add(7);
+        tree1.add(2);
+        tree1.add(9);
+        tree1.add(1);
+        tree1.add(5);
+        expect(treeChecker(tree1, 3)).toBe(true);
     });
-    it('should return true if the tree has two elements that their summation is the given integer', () => {
-        let tree2 = [7,2,9,2,5,null,14];
-        let integer = 3;
-        expect(treeChecker(tree2, integer)).toEqual(false);
+
+    it('returns false if there are no values in the tree that add up to the integer', () => {
+        let tree1 = new Tree();
+        tree1.add(7);
+        tree1.add(2);
+        tree1.add(9);
+        tree1.add(1);
+        tree1.add(5);
+        expect(treeChecker(tree1, 100)).toBe(false);
     });
-}   
-);
+});
